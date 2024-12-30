@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gana un premio de Amazon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #000; /* Fondo negro por defecto */
+            background-image: url('amazon1.jpg'); /* Cambia esta URL por la imagen que desees */
+            background-size: cover; /* La imagen cubre todo el fondo */
+            background-position: center; /* Centra la imagen */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            color: #fff; /* Texto blanco */
+        }
+        .container {
+            margin-top: 5%;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8); /* Fondo semitransparente para mejorar la legibilidad */
+            border-radius: 10px;
+            display: inline-block;
+            max-width: 90%;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #FF9900; /* Título en color anaranjado */
+        }
+        .upload-box {
+            margin-top: 30px;
+            display: inline-block;
+            padding: 20px;
+            border: 2px dashed #FF9900; /* Bordes anaranjados */
+            border-radius: 10px;
+            background-color: #1a1a1a; /* Fondo gris oscuro */
+            color: #fff; /* Texto blanco */
+            box-shadow: 0 4px 6px rgba(255, 153, 0, 0.5); /* Sombra anaranjada */
+        }
+        .upload-box:hover {
+            background-color: #333; /* Fondo gris más claro al pasar el cursor */
+        }
+        form {
+            text-align: left;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-size: 1em;
+            color: #FF9900; /* Texto de etiquetas en anaranjado */
+        }
+        input[type="text"],
+        input[type="file"] {
+            display: block;
+            margin: 10px 0 20px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #FF9900; /* Borde anaranjado */
+            border-radius: 5px;
+            width: 100%;
+            background-color: #333; /* Fondo gris oscuro */
+            color: #fff; /* Texto blanco */
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            color: #000; /* Texto negro */
+            background-color: #FF9900; /* Fondo anaranjado */
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #e68a00; /* Más oscuro al pasar el cursor */
+        }
+        .disclaimer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #ccc; /* Texto gris claro */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¿Quieres ganar un premio de AMAZON?</h1>
+        <div class="upload-box">
+            <form action="#" method="post" enctype="multipart/form-data">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+
+                <label for="archivo">Sube tu video:</label>
+                <input type="file" id="archivo" name="archivo" accept="video/*" required>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+        <p class="disclaimer">* Tus datos no serán almacenados ni compartidos.</p>
+    </div>
+</body>
+</html>
